@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="DashBoardFormContext" prefHeight="614.0" prefWidth="893.0" style="-fx-background-color: #abe4ff; -fx-background-radius: 27;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="580.0" fitWidth="875.0" layoutX="7.0" layoutY="11.0" pickOnBounds="true" smooth="false" style="-fx-effect: 12;">
+         <image>
+            <Image url="@../assests/download%20(1).jpg" />
+         </image>
+         <effect>
+            <Lighting specularExponent="4.88" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Text layoutX="400.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLUE OCEAN HOTEL" wrappingWidth="420.53466796875">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Text>
+      <Text fill="#005bc5" layoutX="214.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME" wrappingWidth="510.3125">
+         <font>
+            <Font name="Georgia" size="96.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="411.0" layoutY="517.0" onAction="#openLoginForm" prefHeight="47.0" prefWidth="129.0" style="-fx-background-color: #005bc5; -fx-background-radius: 23;" text="GO&gt;&gt;">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6116504854368932" startY="0.5097087378640777">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
